@@ -2,8 +2,8 @@ section { margin: 20px auto; padding: 15px; width: 1050px; overflow: hidden; bor
 .aside { float: left; width: 200px; }
 .aside dl { overflow: hidden; height: 100%; transition: height 0.4s; }
 .aside dl .leaf{ padding: 10px 30px; }
-.aside dt { z-index: 2; position: relative; cursor: url(../img/a2.png),pointer; margin-bottom: 6px; color: rgba(255,255,255,0.8); font-weight: bold; }
-.aside dd { position: relative; top: 0; cursor: url(../img/a2.png),pointer; padding: 5px 0 5px 20px; width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: top 0.4s linear 0s; }
+.aside dt { z-index: 2; position: relative; cursor: url(../img/hand.png),pointer; margin-bottom: 6px; color: rgba(255,255,255,0.8); font-weight: bold; }
+.aside dd { position: relative; top: 0; cursor: url(../img/hand.png),pointer; padding: 5px 0 5px 20px; width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: top 0.4s linear 0s; }
 .aside dd:nth-child(even) { color: rgba(255,255,255,0.5); }
 .aside dd:nth-child(odd) { color: rgba(255,255,255,0.9); }
 .aside dd:hover { font-size: 18px; font-weight: bold; color: #87de0d;  text-shadow: rgba(0,0,0,0.5) 2px 0 0, rgba(0,0,0,0.5) 0 2px 0, rgba(0,0,0,0.5) -2px 0 0, rgba(0,0,0,0.5) 0 -2px 0; }
@@ -55,13 +55,13 @@ article .project .case .c-box4 span:nth-child(7) { color:#CDDC39; text-shadow:0 
 	0%,20%,90%,to{opacity:1}
 	10%,30%{opacity:0.1}
 }
-article .project .case .c-box5 span { animation: glow 8s linear infinite; cursor: url(../img/a2.png),pointer; position: relative; margin: 12px 0; width: 130px; height: 40px; line-height: 40px; border-radius: 20px; color: white; background-color: white; font-size: 20px; border: transparent; outline: transparent; background: linear-gradient(90deg, #00dbde, #fc00ff, #00dbde); background-size: 300%; z-index: 1; }
+article .project .case .c-box5 span { animation: glow 8s linear infinite; cursor: url(../img/hand.png),pointer; position: relative; margin: 12px 0; width: 130px; height: 40px; line-height: 40px; border-radius: 20px; color: white; background-color: white; font-size: 20px; border: transparent; outline: transparent; background: linear-gradient(90deg, #00dbde, #fc00ff, #00dbde); background-size: 300%; z-index: 1; }
 article .project .case .c-box5 span::before { filter: blur(8px); animation: glow 8s linear infinite; position: absolute; content: ""; top: -3px; left: -3px; bottom: -3px; right: -3px; background: inherit; background-size: inherit; border-radius: 4em; transition: 0.5s; z-index: -1; }
 article .project .case .c-box5 span:hover::before { filter: blur(20px); }
 @keyframes glow {
   to { background-position: 300%; }
 }
-article .project .case .c-box6 span { cursor: url(../img/a2.png),pointer; transform: skewX(-10deg); width: 130px; height: 40px; line-height: 40px; border: 1px solid #ffeca8; border-radius: 20px 5px 20px 0px; backdrop-filter: blur(10px); background-image: linear-gradient(to bottom, rgba(255, 138, 48, 0.6), rgba(240, 96, 29, 0.6)); box-shadow: 0 0 70px rgba(255, 138, 48, 0.6), 0 5px 20px rgba(255, 138, 48, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8; color: #ffeca8; animation: breath2 2s 0.5s infinite alternate; transition: all 0.2s ease; }
+article .project .case .c-box6 span { cursor: url(../img/hand.png),pointer; transform: skewX(-10deg); width: 130px; height: 40px; line-height: 40px; border: 1px solid #ffeca8; border-radius: 20px 5px 20px 0px; backdrop-filter: blur(10px); background-image: linear-gradient(to bottom, rgba(255, 138, 48, 0.6), rgba(240, 96, 29, 0.6)); box-shadow: 0 0 70px rgba(255, 138, 48, 0.6), 0 5px 20px rgba(255, 138, 48, 0.6), inset 0 1px #ffeca8, inset 0 -1px #ffeca8; color: #ffeca8; animation: breath2 2s 0.5s infinite alternate; transition: all 0.2s ease; }
 article .project .case .c-box6 span::before { content: ""; width: calc(100% - 22px); height: calc(40px - 8px); box-shadow: inset 0 0 8px 0 #ffeca8; animation: breath 2s infinite alternate; left: 10px; top: 3px; position: absolute; background-color: transparent; border: 1px solid #fff; border-radius: 15px 3px 15px 3px; }
 article .project .case .c-box6 span:hover { box-shadow: 0 0 70px rgba(255, 138, 48, 0.8), 0 5px 20px rgba(255, 138, 48, 0.8), inset 0 1px #ffeca8, inset 0 -1px #ffeca8; }
 article .project .case .c-box6 span:hover::before { box-shadow: inset 0 0 24px 0 #ffeca8; }
@@ -73,7 +73,7 @@ article .project .case .c-box6 span:hover::before { box-shadow: inset 0 0 24px 0
   0% { transform: skewX(-10deg) scaleX(1); }
   100% { transform: skewX(-10deg) scaleX(0.9); }
 }
-.switch { position: relative; margin: 10px 22px; padding: 8px; width: 120px; height: 30px; border-radius: 20px; border-top: 1px solid #ccc; border-bottom: 1px solid #fff; cursor: url(../img/a2.png),pointer; box-shadow: 0 15px 15px rgba(150, 148, 148, 0.7) inset, 0px -5px 6px white inset; }
+.switch { position: relative; margin: 10px 22px; padding: 8px; width: 120px; height: 30px; border-radius: 20px; border-top: 1px solid #ccc; border-bottom: 1px solid #fff; cursor: url(../img/hand.png),pointer; box-shadow: 0 15px 15px rgba(150, 148, 148, 0.7) inset, 0px -5px 6px white inset; }
 .switch .switch__inner { position: relative; width: 100%; height: 100%; background: #abdc28; border-radius: 20px; box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px rgba(0, 0, 0, 0.3); border: 0.5px solid rgba(0, 0, 0, 0.4); }
 .switch .switch__inner .switch__status { transition: all 1s ease-in-out; text-indent: -20px; line-height: 31px; text-shadow: 0px 0.2px rgba(255, 255, 255, 0.3); }
 .switch .switch__toggle { transition: all 1s ease-in-out; position: absolute; top: 5px; right: 0; left: 95px; height:36px; width:36px; background: #D2D1D2; border-radius: 50%; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8), 0px 3px 3px white inset, 0px -2px 2px rgba(0, 0, 0, 0.6) inset; }
@@ -81,7 +81,7 @@ article .project .case .c-box6 span:hover::before { box-shadow: inset 0 0 24px 0
 .switch.switch-off .switch__inner .switch__status { text-indent: 20px; }
 .switch.switch-off .switch__toggle { left: 5px; }
 article .project .case .c-box7 { position: relative; }
-article .project .case .c-box7 span { transition: all .5s ease-in-out; color: #fff; cursor: url(../img/a2.png),pointer; border-radius: 20px; margin: 12px 0; width: 130px; height: 40px; line-height: 40px; font-size: 20px; font-weight: bold; border: 2px solid #fff; box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.4); background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%); }
+article .project .case .c-box7 span { transition: all .5s ease-in-out; color: #fff; cursor: url(../img/hand.png),pointer; border-radius: 20px; margin: 12px 0; width: 130px; height: 40px; line-height: 40px; font-size: 20px; font-weight: bold; border: 2px solid #fff; box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.4); background: linear-gradient(135deg, #FEB692 0%, #EA5455 100%); }
 article .project .case .c-box7 div { opacity: 1; transition: all 1s ease-in-out; width: 40px; height: 40px; border: 2px solid white; border-radius: 50%; position: absolute; top: 13px; left: 68px; display: none; transform: scale(1); }
 article .project .case .c-box7 .click { display: block; transform: scale(1.5); opacity: 0; }
 article .project .case .c-box7 span:hover { background: linear-gradient(135deg, #EA5455 0%, #FEB692 100%); animation: c-box7 .5s ease-in both; }
@@ -104,7 +104,7 @@ article .project .case .sbox .s-box .ull li .lii2 li { z-index: -1; height: 44px
 .banner .a-img-ban .img-ban { position: absolute; left: 0; width: 320px; height: 180px; border-radius: 10px; z-index: 9; }
 .banner .img-ban-curr { -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; z-index: 10; }
 .banner ul { z-index: 99; display: inline-block; position: relative; top: 155px; left: 0; overflow: hidden; }
-.banner ul li { margin: 0 5px; float: left; background: #e7e7e7; cursor: url(../img/a2.png),pointer; width: 10px; height: 10px; border-radius: 50%; transition: background-color 0.3s linear 0s; }
+.banner ul li { margin: 0 5px; float: left; background: #e7e7e7; cursor: url(../img/hand.png),pointer; width: 10px; height: 10px; border-radius: 50%; transition: background-color 0.3s linear 0s; }
 .banner ul li.curr { background-color: #79d48b; }
 .banner2 { z-index: 1; position: relative; margin: 30px auto; width: 320px; height: 180px; }
 .banner2 #ul1 { z-index: -1; position: relative; left: 0; -webkit-transform-style:preserve-3d; transition-duration: 0.6s; }
@@ -117,7 +117,7 @@ article .project .case .sbox .s-box .ull li .lii2 li { z-index: -1; height: 44px
 .banner2 #ul2 { z-index: 99; display: inline-block; position: relative; top: 155px; left: 0; overflow: hidden;  }
 .banner2 #ul2 li { margin: 0 5px; float: left; background: #e7e7e7; width: 10px; height: 10px; border-radius: 50%; transition: background-color 0.3s linear 0s; }
 .banner2 #ul2 li.curr { background-color: #79d48b; }
-.banner2 span { cursor: url(../img/a2.png),pointer;  position: relative; background-color: rgba(255,255,255,.2); font-size: 40px; color: #D0D0D0; }
+.banner2 span { cursor: url(../img/hand.png),pointer;  position: relative; background-color: rgba(255,255,255,.2); font-size: 40px; color: #D0D0D0; }
 .banner2 #lt { top: 64px; left: 5px; }
 .banner2 #gt { top: 64px; left: auto; right: 5px; }
 article .project .case .zbox { float: left; position: relative; width: 260px; height: 240px; text-align: center; }
