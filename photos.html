@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="css/icon-study.css"/>
     <link rel="stylesheet" href="css/common.css"/>
-
+    <link rel="stylesheet" href="css/photos.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/selector.js"></script>
     <script type="text/javascript" src="js/css-js.js"></script>
@@ -68,9 +68,9 @@
     <div class="title l">星空博客</div>
     <ul>
         <li><a href="index.html">首页</a></li>
-        <li><a href="friends.html">朋友圈</a></li>
-        <li class="current"><a href="css-js.html">相册</a></li>
-        <li><a href="text-manage1.html" target="_blank">管理</a></li>
+        <li><a href="friends.html">博客列表</a></li>
+        <li class="current"><a href="photos.html">相册</a></li>
+        <li><a href="text-manage1.html" >管理</a></li>
         <li><a href="message.html">留言板</a></li>
     </ul>
 </nav>
@@ -80,6 +80,40 @@
 <section>
     <article>
 
+        <div class="gallery-section">
+            <div class="inner-width">
+                <h1>Gallery</h1>
+                <div class="border"></div>
+                <div class="gallery">
+
+                    <a href="img/1.jpg" class="image">
+                        <img src="img/1.jpg" alt="">
+                    </a>
+
+                    <a href="img/2.jpg" class="image">
+                        <img src="img/2.jpg" alt="">
+                    </a>
+
+                    <a href="img/3.jpg" class="image">
+                        <img src="img/3.jpg" alt="">
+                    </a>
+
+                    <a href="img/4.jpg" class="image">
+                        <img src="img/4.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".gallery").magnificPopup({
+                delegate:  'a',
+                type: 'image',
+                gallery:{
+                    enabled:true
+                }
+            });
+        </script>
     </article>
 </section>
 <footer class="clearfix"><p>@星空博客</p></footer>
